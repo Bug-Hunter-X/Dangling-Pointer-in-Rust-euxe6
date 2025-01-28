@@ -1,0 +1,1 @@
+This repository demonstrates a common error in Rust: using a dangling pointer.  The `bug.rs` file contains code that creates a mutable pointer to a vector element, then modifies the vector in a way that invalidates the pointer. Attempting to dereference the pointer after modification leads to undefined behavior, likely a crash. The `bugSolution.rs` provides a safer alternative.
